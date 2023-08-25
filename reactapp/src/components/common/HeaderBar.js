@@ -11,15 +11,15 @@ export default function HeaderBar() {
     const handleCloseSignin = () => setSignin(false);
 
     return (
-        <div>
-            <nav className="navbar navbar-dark bg-dark">
+        <div className="site-header py-0">
+            <nav className="navbar navbar-dark  py-3 container d-flex flex-column flex-md-row justify-content-between ">
                 <div className="container-fluid">
                     <a className="navbar-brand" style={{ marginLeft: -8 }} href="#">
-                        <img src={require("../../assets/logo.png")} alt=" " width="100" height="31" className="d-inline-block align-text-top" />
+                        <img src={require("../../assets/logodark.png")} alt=" " width="120" height="41" className="d-inline-block align-text-top" />
                     </a>
                     <div className="d-flex flex-row-reverse">
-                        <button style={{ marginRight: 0 }} type="button" className="btn btn-secondary" onClick={() => { handleOpenSignup() }}>Signup</button>
-                        <button style={{ marginRight: 10 }} type="button" className="btn btn-secondary" onClick={() => { handleOpenSignin() }}>Signin</button>
+                        <button style={{ marginRight: 0 }} type="button" className="btn btn-danger px-4" onClick={() => { handleOpenSignup() }}>Signup</button>
+                        <button style={{ marginRight: 10 }} type="button" className="btn btn-outline-danger px-4" onClick={() => { handleOpenSignin() }}>Signin</button>
                     </div>
 
                 </div>

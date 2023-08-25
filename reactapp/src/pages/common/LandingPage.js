@@ -14,9 +14,17 @@ import SigninForm from "../../components/common/SigninForm";
 import image from "../../assets/2.jpg"
 import image1 from "../../assets/1.jpg"
 import image3 from "../../assets/3.jpg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './LandingPage.scss'
+
 
 
 export default function LandingPage() {
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
 
     const [signup, setSignup] = useState(false);
     const [signin, setSignin] = useState(false)
@@ -61,8 +69,9 @@ export default function LandingPage() {
 
     return (
         <div>
+          <div className="body1">
             <HeaderBar/>
-            <div className="container-fluid">
+            <div className="container-fluid" data-aos="fade-top">
                 <div className="row">
 
                 <div class="container col-xxl-8 px-4 py-5">
@@ -93,6 +102,7 @@ export default function LandingPage() {
   </div>            
                 </div>
             </div>
+            </div>
 
 
 
@@ -104,12 +114,12 @@ export default function LandingPage() {
       <div className="container">
         <div className="feature-content">
           <div className="row">
-            <div className="col-lg-6 feature-caption">
+            <div className="col-lg-6 feature-caption" data-aos="fade-top">
               <h6>Best Experience</h6>
               <h2 class="display-6 lh-1 fw-bold">Discover a World of Delightful Shopping</h2>
               <p className="lead">At ShopSavvy, we've curated a stunning array of products that cater to your unique tastes. From fashion to electronics, home decor to wellness, we're your one-stop shop for everything you desire.</p>
             </div>
-            <div className="col-lg-6 text-sm-center d-none d-lg-block">
+            <div className="col-lg-6 text-sm-center d-none d-lg-block" data-aos="fade-top">
               <img src={require('../../assets/iphone1.png')} class="d-block mx-lg-auto img-fluid" alt="iphone" width="250" height="500"/>
             </div>
           </div>
@@ -123,10 +133,10 @@ export default function LandingPage() {
       <div className="container">
         <div className="feature-content">
           <div className="row">
-            <div className="col-lg-6 text-sm-center d-none d-lg-block">
+            <div className="col-lg-6 text-sm-center d-none d-lg-block" data-aos="fade-top">
             <img src={require('../../assets/lady.png')} class="img-fluid" height="500" alt="iphone" />
             </div>
-            <div className="col-lg-5 ml-lg-auto">
+            <div className="col-lg-5 ml-lg-auto" data-aos="fade-top">
               <h6>The wow factor</h6>
               <h2 className="display-6 lh-1 fw-bold">Unbeatable Discounts Await You!</h2>
               <p className="lead">Browse through our range of products and enjoy discounts that make your shopping experience even more rewarding. From seasonal sales to bundle offers, we have something for everyone.</p>
@@ -142,12 +152,12 @@ export default function LandingPage() {
       <div className="container pt-6">
         <div className="feature-content">
           <div className="row">
-            <div className="col-lg-6 feature-caption">
+            <div className="col-lg-6 feature-caption" data-aos="fade-top">
               <h6>Incredible products</h6>
               <h2 class="display-6 lh-1 fw-bold">Stay Ahead of the Curve!</h2>
               <p className="lead">Explore our handpicked selection of trending products. Be the first to own the latest gadgets, flaunt the freshest fashion, and adorn your surroundings with top-notch decor.</p>
             </div>
-            <div className="col-lg-6 text-sm-center d-none d-lg-block">
+            <div className="col-lg-6 text-sm-center d-none d-lg-block" data-aos="fade-top">
             <img src={require('../../assets/laptop1.png')} class="img-fluid"  alt="iphone" />
             </div>
           </div>
@@ -165,35 +175,35 @@ export default function LandingPage() {
     <div className="container-fluid py-9">
                 <div className="row">
                     
-                        <p className="h2 text-center fw-bold "><b>Ultimate Shopping Bliss</b></p>
+                        <p className="h2 text-center fw-bold " data-aos="fade-top"><b>Ultimate Shopping Bliss</b></p>
                     
                 </div>
             </div>
             <div className='container'>          
-                <div class="row d-flex justify-content-center">
+                <div className="row d-flex justify-content-center">
 
-                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-10 py-5 ">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-8 shadow-lg" style={{backgroundImage: `url('${image1}')` , backgroundSize:"contain"}}>
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Free Shipping & Fast Delivery</h2>
+                <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-10 py-5 ">
+      <div className="col" data-aos="zoom-in">
+        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-8 shadow-lg" style={{backgroundImage: `url('${image1}')` , backgroundSize:"contain"}}>
+          <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Free Shipping & Fast Delivery</h2>
           </div>
         </div>
       </div>
 
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{backgroundImage: `url('${image}')` , backgroundRepeat:"no-repeat",backgroundSize:"contain"}}>
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">24 hrs Customer Support</h2>
+      <div className="col" data-aos="zoom-in">
+        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{backgroundImage: `url('${image}')` , backgroundRepeat:"no-repeat",backgroundSize:"contain"}}>
+          <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">24 hrs Customer Support</h2>
           </div>
         </div>
       </div>
 
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{backgroundImage: `url('${image3}')` , backgroundRepeat:"no-repeat",backgroundSize:"contain"}}>
+      <div className="col" data-aos="zoom-in" delay="0.9">
+        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{backgroundImage: `url('${image3}')` , backgroundRepeat:"no-repeat",backgroundSize:"contain", backgroundHover:"zoom"}}>
 
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Huge Diversity in Products</h2>
+          <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Huge Diversity in Products</h2>
           </div>
         </div>
       </div>

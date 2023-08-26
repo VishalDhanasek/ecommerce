@@ -1,7 +1,7 @@
 import React from "react";
 import "../../pages/buyer/home.css"
 
-import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaGithub, FaDiscord, FaMapMarkerAlt, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 
 
 
@@ -55,37 +55,35 @@ const Footer = () => {
         <div className="row mt-3">
           
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            
-            <h6 className="text-uppercase fw-bold">Company name</h6>
+          <img src={require("../../assets/logo.png")} alt=" " width="120" height="41" className="d-inline-block align-text-top" />
+
             <hr
                 className="mb-4 mt-0 d-inline-block mx-auto"
                 
                 />
-            <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+            <p className="py-4">
+            Your Ultimate Destination for Online Retail Therapy!
             </p>
           </div>
           
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
            
-            <h6 className="text-uppercase fw-bold text-danger">Products</h6>
+            <h6 className="text-uppercase fw-bold text-danger">Company</h6>
             <hr
                 className="mb-4 mt-0 d-inline-block mx-auto"
                 
                 />
             <p>
-              <a href="#!" className="text-white">MDBootstrap</a>
+              <a href="#!" className="text-white">About Us</a>
             </p>
             <p>
-              <a href="#!" className="text-white">MDWordPress</a>
+              <a href="#!" className="text-white">Customer Care</a>
             </p>
             <p>
-              <a href="#!" className="text-white">BrandFlow</a>
+              <a href="#!" className="text-white">Careers</a>
             </p>
             <p>
-              <a href="#!" className="text-white">Bootstrap Angular</a>
+              <a href="#!" className="text-white">Our Team</a>
             </p>
           </div>
           
@@ -121,10 +119,10 @@ const Footer = () => {
                 className="mb-4 mt-0 d-inline-block mx-auto"
                
                 />
-            <p><i className="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i className="fas fa-envelope mr-3"></i> info@example.com</p>
-            <p><i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <p><FaMapMarkerAlt/>       Coimbatore, India</p>
+            <p><FaMailBulk />          info@zest.com</p>
+            <p><FaPhoneAlt />    +91 96290 18823</p>
+
           </div>
           
         </div>
@@ -138,9 +136,9 @@ const Footer = () => {
          className="text-center p-3"
        
          >
-      © 2020 Copyright:
-      <a className="text-white" href="https://mdbootstrap.com/"
-         >MDBootstrap.com</a
+      © 2023 Copyright: 
+      <a className="text-white" href="#"
+         > zest.com</a
         >
     </div>
     

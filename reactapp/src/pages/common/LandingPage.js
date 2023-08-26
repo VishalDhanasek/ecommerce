@@ -212,6 +212,15 @@ export default function LandingPage() {
             </div>
             <br/><br/><br/><br/><br/>
 
+            <div className="body2">
+<div className="l">
+  Zest. Zest. Zest. Zest. Zest. Zest. Zest. Zest. Zest. Zest. Zest.  
+</div>
+<div className="r">
+  E-commerce. E-commerce.  E-commerce.  E-commerce.  E-commerce.  E-commerce.  E-commerce.   
+</div>
+</div> 
+
             <Footer />
         </div>
     )

@@ -57,7 +57,7 @@ export default function NavigationBar() {
     return (
         <div>
 
-            <div className="header-main border-bottom bg-dark fixed-top">
+            <div className="header-main border-bottom  fixed-top" style={{backgroundColor: "#1c2331"}}>
                 <div className="container-fluid">
                     <div className="row p-2 d-flex align-items-center">
                         <div className="col-md-2">

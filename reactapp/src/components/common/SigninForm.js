@@ -96,7 +96,7 @@ export default function SigninForm(props) {
 
                     <br></br>
                     <div className="d-flex justify-content-center">
-                        <button style={{ backgroundColor: "#F25151", color: "black", marginTop: 5 }} type="button" class="btn" onClick={() => handleSignin()}><b>Submit</b></button>
+                        <button style={{ backgroundColor: "#F25151", color: "white", marginTop: 5 }} type="button" class="btn" onClick={() => handleSignin()}><b>Submit</b></button>
                         <ToastContainer />
                     </div>
                     <div className="d-flex justify-content-center">
